@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+    --color1: black;
+    --color2: white;
+    --color3: rgb(7, 7, 7);
+    --color4: darkgray;
+    --color5: rgb(197, 197, 197);
+    --color6: #567EF7;
+    --color7: #062275;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+    
+}
+
+header > h1{
+    padding-block: 100px;
+    color: var(--color2);
+    font-size: 70px;
+    font-family: var(--font2);
+    font-variant: small-caps;
+    text-align: center;
+    background-image: linear-gradient(180deg, var(--color6), var(--color7));
+}
+nav{
+    background-color: var(--color7);
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav > ul > li{
+    list-style: none;
+    padding-block: 20px;
+}
+nav > ul > li > a{
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    color: var(--color2);
+    text-decoration: none;
+    width: 180px;
+    padding-block: 10px;
+    transition: 0.2s;
+    font-weight: bold;
+}
+nav > ul > li > a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    background-color: rgb(224, 76, 76);
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%); /**/
+    transition: 0.5s ease-in-out;
+    
+  }
+  
+  
+nav > ul > li > a:hover::after {
+    width: inherit;
+}
+
+main{
+    width: 80vw;
+    margin: auto;
+    box-shadow: 22px 0px 20px 1px rgba(0, 0, 0, 0.01), -22px 0px 20px 1px rgba(0, 0, 0, 0.01);
+}
+
+.article{
+    margin: auto;
+    width: 70vw;
+    text-align: justify;
+}
+.article > h2{
+    text-align: center;
+    padding-block:50px;
+}
+.article > p{
+    font-size: 16px;
+    padding-bottom: 10px;
+    line-height: 40px;
+    text-indent: 100px;
+}
+.article > .imagem{
+    padding-bottom: 20px;
+    width: 65vw;
+    margin: auto;
+}
+.article > .imagem > abbr > img{
+    width: 65vw;
+    
+}
+audio {
+    width: 100%;
+}
+
+
+img{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+.article > .imagem > p{
+    text-align: start;
+    font-size: 10px;
+    text-align: center;
+}
+a#topo{
+    position: fixed;
+    top: 90vh;
+    left: 90vw;
+}
+a#topo > img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    box-shadow: none;
+}
+  
+
+footer{
+    font-size: 14px;
+    background-color: var(--color7);
+    color: var(--color2); 
+    padding: 15px;
+    text-align: center;
+}
+footer > form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; 
+    margin: auto;
+    width: 40vw;
+}
+
+footer > form > fieldset {
+    grid-column: 1 / -1; 
+}
+
+footer > form > fieldset > label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+footer > form > fieldset > input, textarea {
+    width: 100%;
+}
+
+footer > form > fieldset >.btn {
+    grid-column: 1 / -1; 
+}
+footer > form > fieldset > legend{
+    font-weight: bold;
+}
+footer > p > a{
+    color: var(--color2);
+    text-decoration: none;
+    font-weight: bolder;
+}
